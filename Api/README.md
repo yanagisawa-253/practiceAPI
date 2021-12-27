@@ -5,21 +5,10 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version 5.2.5
 
-* System dependencies
+###　概要
+Googleマップについての学習
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-hoge
+### 目的
+目的としてはGoogleマップAPIを取得方法について、PFのアップデートの内容として取り入れたいがため
