@@ -13,4 +13,4 @@ or visit https://docs.aws.amazon.com/console/cloud9/ for our documentation.
 
 Happy coding!
 
-AIzaSyA2VyuWuGPx0eggHWs8TtGzVrr3GtS-0lw
+
