@@ -1,19 +1,19 @@
 <div class="container">
   <div class="book-box mt-5">
     <h3>BOOK一覧 ＆ 登録ページ</h3>
-    <% @books.each do |books| %>
-    <p>タイトル:<%= book.title %></p>
-    <p>内容:<%= book.body %></p><br>
+    <% @books.each do |book| %>
+    <p>タイトル:<%= book.title %>  内容:<%= book.body %></p>
     <% end %>
   </div>
+
   <div class="new-book">
-    <h1>新規投稿</h1>
+    <h3>新規投稿</h3>
     <%= form_with model: @book, local:true do |f| %>
-      <h4>タイトル</h4>
+      <p>タイトル</p>
       <%= f.text_field :title %>
-      <h4>本文</h4>
-      <%= f.text_area :body %>
-      <%= f.submit '投稿' %>
+      <p>本文</p>
+      <%= f.text_area :body %><br>
+      <%= f.submit '投稿', class: "btn btn-primary" %>
     <% end %>
   </div>
 </div>
