@@ -1,12 +1,13 @@
 <div class="container">
-  <div class="book-box mt-5">
+  <div class="row">
+  <div class="book-box col-6 mt-5">
     <h3>BOOK一覧 ＆ 登録ページ</h3>
     <% @books.each do |book| %>
     <p>タイトル:<%= book.title %>  内容:<%= book.body %></p>
     <% end %>
   </div>
 
-  <div class="new-book">
+  <div class="new-book col-6 mt-5">
     <h3>新規投稿</h3>
     <%= form_with model: @book, local:true do |f| %>
       <p>タイトル</p>
@@ -15,5 +16,6 @@
       <%= f.text_area :body %><br>
       <%= f.submit '投稿', class: "btn btn-primary" %>
     <% end %>
+  </div>
   </div>
 </div>
