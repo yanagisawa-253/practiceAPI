@@ -59,6 +59,10 @@ GEM
       sassc-rails (>= 2.0.0)
     bootstrap3-datetimepicker-rails (4.17.47)
       momentjs-rails (>= 2.8.1)
+    bootstrap4-datetime-picker-rails (0.3.1)
+      jquery-rails (~> 4.2, >= 4.2.0)
+      moment-timezone-rails (~> 1.0)
+      momentjs-rails (>= 2.10.5, <= 3.0.0)
     builder (3.2.4)
     byebug (11.1.3)
     capybara (3.36.0)
@@ -121,6 +125,8 @@ GEM
     mini_mime (1.1.2)
     mini_portile2 (2.6.1)
     minitest (5.15.0)
+    moment-timezone-rails (1.0.0)
+      momentjs-rails (>= 2.10.5, <= 3.0.0)
     momentjs-rails (2.29.1)
       railties (>= 3.1)
     msgpack (1.4.2)
@@ -194,6 +200,8 @@ GEM
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
+    simple_calendar (2.4.3)
+      rails (>= 3.0)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -236,6 +244,7 @@ DEPENDENCIES
   bootsnap (>= 1.1.0)
   bootstrap (~> 4.5)
   bootstrap3-datetimepicker-rails
+  bootstrap4-datetime-picker-rails
   byebug
   capybara (>= 2.15)
   chromedriver-helper
@@ -245,11 +254,12 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
-  momentjs-rails (>= 2.9.0)
+  momentjs-rails
   puma (~> 3.11)
   rails (~> 5.2.6)
   sass-rails (~> 5.0)
   selenium-webdriver
+  simple_calendar (~> 2.0)
   spring
   spring-watcher-listen (~> 2.0.0)
   sqlite3

@@ -1,0 +1,13 @@
+<% form_with model: reservation do |f| %>
+  <div class="form-group event_name">
+    <%= f.label :name %>
+    <%= f.text_field :name, class: "form-control" %>
+  </div>
+
+  <div class="form-group event_start-time">
+    <%= f.label :start_time do %>
+    <%= f.text_field :start_time, class: "form-control datetimepicker-input", id: "start_time", data: {toggle: "datetimepicker", target: "#start_time"} %>
+    <% end %>
+  </div>
+  <%= f.submit "実行", class: "btn w-100" %>
+<% end %>

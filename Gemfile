@@ -68,5 +68,10 @@ gem 'font-awesome-sass', '~> 5.13'
 gem 'devise'
 
 gem 'bootstrap3-datetimepicker-rails'
-gem 'momentjs-rails', '>= 2.9.0'
+gem 'momentjs-rails'
+
+gem "bootstrap4-datetime-picker-rails"
+
+gem 'simple_calendar', '~> 2.0'
+
 

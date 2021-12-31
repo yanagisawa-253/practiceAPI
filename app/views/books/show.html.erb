@@ -2,6 +2,7 @@
   <div class="col-10 mt-5 mb-4">
     <div class="book-box">
       <p><%= @book.title %></p>
+      <%= render partial: 'books/form', locals: { reservation: @reservation } %>
     </div>
   </div>
   <div class="col-10">
