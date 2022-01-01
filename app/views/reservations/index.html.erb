@@ -1,3 +1,4 @@
+<p id="notice"><%= notice %></p>
 <h1>Reservations</h1>
 
 <table>
@@ -23,18 +24,5 @@
 </table>
 
 <br>
-
-<!-- ここから --!>
-<%= month_calendar events: @reservations do |date, reservations| %>
-  <%= date %>
-
-  <% reservations.each do |reservation| %>
-    <div>
-      <%= reservation.start_time.hour %>:<%= reservation.start_time.min %>
-      <%= reservation.name %>
-    </div>
-  <% end %>
-<% end %>
-<!-- ここまで追加 --!>
 
 <%= link_to 'New Reservation', new_reservation_path %>

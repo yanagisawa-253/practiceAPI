@@ -19,8 +19,23 @@
 //= require turbolinks
 //= require_tree .
 
-//= require moment
-//= require bootstrap-datetimepicker
 
-//= require moment/ja.js
 //= require tempusdominus-bootstrap-4.js
+
+//= require jquery
+//= require moment
+//= require fullcalendar
+
+$(function () {
+    function eventCalendar() {
+        return $('#calendar').fullCalendar({});
+    };
+    function clearCalendar() {
+        $('#calendar').html('');
+    };
+    $(document).on('turbolinks:load', function () {
+    eventCalendar();
+    });
+    $(document).on('turbolinks:before-cache', clearCalendar);
+});
+
