@@ -5,5 +5,7 @@ Rails.application.routes.draw do
   resources :books
   resources :reservations
 
+  resources :events
+
   # POST   '/books/book_id/reservations(:format)'
 end
