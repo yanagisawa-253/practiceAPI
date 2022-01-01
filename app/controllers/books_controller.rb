@@ -3,8 +3,9 @@ class BooksController < ApplicationController
      @books = Book.all
      @book = Book.new
      @user = current_user
+     @events = Event.all
   end
-  
+
   def show
     @book = Book.find(params[:id])
   end

@@ -20,7 +20,7 @@
       </table>
   </div>
 
-  <div class="new-book col-6 mt-5">
+  <div class="new-book col-4 mt-5 ml-5">
     <h3>新規投稿</h3>
     <%= form_with model: @book, local:true do |f| %>
       <p>タイトル</p>
@@ -29,6 +29,15 @@
       <%= f.text_area :body %><br>
       <%= f.submit '投稿', class: "btn btn-primary" %>
     <% end %>
+  </div>
+  <div class="col-12 mt-4 mb-5">
+    <h1>Events#index</h1>
+      <%= month_calendar events: @events do |date, events| %>
+        <%= date.day %>
+      <% end %>
+    <div class="bottun">
+      <%= link_to 'イベント追加', new_event_path, class: "btn btn-danger mt-5" %>
+    </div>
   </div>
   </div>
 </div>
