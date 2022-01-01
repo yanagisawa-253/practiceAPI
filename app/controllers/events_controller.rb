@@ -3,9 +3,13 @@ class EventsController < ApplicationController
     @events = Event.all
   end
 
+  def new
+    @event = Event.new
+
   def create
     @event = Event.new(event_params)
-    @event.save!
+    @event.save
+    redirect_to books_path
     @events = Event.where(user_id: current_user.id)
   end
 
