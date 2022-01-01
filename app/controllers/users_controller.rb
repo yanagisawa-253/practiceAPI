@@ -3,6 +3,8 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @book = @user.books
+    @events = Event.where(user_id: @user.id)
+    @event = Event.new
   end
 
   def create

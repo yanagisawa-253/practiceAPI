@@ -3,4 +3,7 @@ Rails.application.routes.draw do
   root 'homes#top'
   resources :users
   resources :books
+  resources :reservations
+
+  # POST   '/books/book_id/reservations(:format)'
 end
